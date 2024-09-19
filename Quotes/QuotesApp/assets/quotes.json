@@ -1,0 +1,22 @@
+[
+    {
+        "quote": "Imaginação é mais importante que conhecimento.",
+        "author": "Albert Einstein",
+        "image": "einstein.jpg"
+    },
+    {
+        "quote": "O unico caminho para fazer bem seu trabalho é amar o que você faz",
+        "author": "Steve Jobs",
+        "image": "steve_jobs.jpg"
+    },
+    {
+        "quote": "A vida é o que acontece quando você está ocupado fazendo outros planos.",
+        "author": "John Lennon",
+        "image": "john_lennon.jpg"
+    },
+    {
+        "quote": "No fim, nós não iremos nos lembrar das palavras dos nossos inimigos, mas do silêncio dos nossos amigos.",
+        "author": "Martin Luther King Jr.",
+        "image": "martin_luther_king.jpg"
+    }
+]
