@@ -44,7 +44,7 @@ function App() {
         step={10}
       />
       <Text style={{ fontSize: 24 }}>{value.toFixed()}</Text>
-      <Text style={{ fontSize: 24, justifyContent: center}}>Switch</Text>
+      <Text style={{ fontSize: 24 }}>Switch</Text>
       <Switch
         value={isOn}
         onValueChange={(value) => setIsOn(value)}
