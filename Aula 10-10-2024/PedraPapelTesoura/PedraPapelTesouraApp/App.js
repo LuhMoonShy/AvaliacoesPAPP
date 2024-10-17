@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, Image } from 'react-native';
 
-// Função para gerar a jogada aleatória do aplicativo
 const gerarJogadaAleatoria = () => {
   const opcoes = ['Pedra', 'Papel', 'Tesoura'];
   const indiceAleatorio = Math.floor(Math.random() * opcoes.length);
   return opcoes[indiceAleatorio];
 };
 
-// Função para determinar o resultado do jogo
+
 const determinarResultado = (jogadaUsuario, jogadaApp) => {
   if (jogadaUsuario === jogadaApp) return 'Empate!';
   if (
@@ -26,7 +25,7 @@ export default function App() {
   const [jogadaUsuario, setJogadaUsuario] = useState('');
   const [jogadaApp, setJogadaApp] = useState('');
   const [resultado, setResultado] = useState('');
-  const [jogoAtivo, setJogoAtivo] = useState(true);  // Controla se o jogo está ativo ou não
+  const [jogoAtivo, setJogoAtivo] = useState(true);  
 
   const jogar = (opcao) => {
     if (jogoAtivo) {
@@ -34,7 +33,7 @@ export default function App() {
       setJogadaUsuario(opcao);
       setJogadaApp(jogadaDoApp);
       setResultado(determinarResultado(opcao, jogadaDoApp));
-      setJogoAtivo(false); // Desativa o jogo após a jogada
+      setJogoAtivo(false); 
     }
   };
 
@@ -42,7 +41,7 @@ export default function App() {
     setJogadaUsuario('');
     setJogadaApp('');
     setResultado('');
-    setJogoAtivo(true);  // Ativa o jogo novamente
+    setJogoAtivo(true);  
   };
 
   return (
@@ -108,15 +107,15 @@ const styles = StyleSheet.create({
   optionButton: {
     alignItems: 'center',
     marginHorizontal: 20,
-    width: 100,  // Define uma largura fixa para os botões
-    height: 100, // Define uma altura fixa para os botões
+    width: 100,  
+    height: 100, 
   },
   optionImage: {
     width: '100%',
     height: '100%',
   },
   disabledButton: {
-    opacity: 0.5, // Visualmente desativa o botão
+    opacity: 0.5, 
   },
   resultContainer: {
     alignItems: 'center',

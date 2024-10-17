@@ -11,8 +11,8 @@ export default function App() {
   const [erroMensagem, setErroMensagem] = useState('');
 
   const validarEntradas = () => {
-    const regexAltura = /^[0-9]+,[0-9]{2}$/;  // Regex para altura no formato correto (ex: 1,60)
-    const regexPeso = /^[0-9]+(,[0-9]{1,2})?$/;  // Regex para peso (ex: 70 ou 70,5)
+    const regexAltura = /^[0-9]+,[0-9]{2}$/;  
+    const regexPeso = /^[0-9]+(,[0-9]{1,2})?$/;  
 
     if (!regexAltura.test(altura)) {
       setErroMensagem('Por favor, insira a altura no formato correto (ex: 1,60m).');

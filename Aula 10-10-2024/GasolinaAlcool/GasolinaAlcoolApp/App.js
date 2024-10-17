@@ -28,7 +28,7 @@ export default function App() {
       setImageSource(require('./assets/gasolina.webp'));
     }
 
-    setCalculoFeito(true); // Desativa o botão "Calcular"
+    setCalculoFeito(true); 
   };
 
   const reiniciar = () => {
@@ -36,7 +36,7 @@ export default function App() {
     setGasolina('');
     setResultado('');
     setImageSource(null);
-    setCalculoFeito(false); // Reativa o botão "Calcular"
+    setCalculoFeito(false); 
   };
 
   return (
@@ -49,7 +49,7 @@ export default function App() {
         keyboardType="numeric"
         value={alcool}
         onChangeText={(value) => setAlcool(value)}
-        editable={!calculoFeito} // Desabilita a edição após o cálculo
+        editable={!calculoFeito} 
       />
       
       <TextInput
@@ -58,13 +58,13 @@ export default function App() {
         keyboardType="numeric"
         value={gasolina}
         onChangeText={(value) => setGasolina(value)}
-        editable={!calculoFeito} // Desabilita a edição após o cálculo
+        editable={!calculoFeito} 
       />
       
       <TouchableOpacity
-        style={[styles.button, calculoFeito && styles.disabledButton]} // Aplica estilo de desabilitado
+        style={[styles.button, calculoFeito && styles.disabledButton]} 
         onPress={calcularVantagem}
-        disabled={calculoFeito} // Desabilita o botão após o cálculo
+        disabled={calculoFeito} 
       >
         <Text style={styles.buttonText}>Calcular</Text>
       </TouchableOpacity>
@@ -126,7 +126,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   disabledButton: {
-    backgroundColor: '#ccc', // Muda a cor do botão desabilitado
+    backgroundColor: '#ccc', 
   },
   buttonText: {
     color: '#fff',
