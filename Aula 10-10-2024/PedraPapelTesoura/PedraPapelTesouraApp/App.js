@@ -46,7 +46,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Pedra, Papel e Tesoura</Text>
+      <Text style={styles.title}> Jogando Pedra, Papel e Tesoura :)</Text>
       <Text style={styles.text}>Escolha um movimento:</Text>
       
       <View style={styles.optionsContainer}>
